@@ -17,7 +17,7 @@ body {
 .list {
   list-style-type: none;
   padding: 0;
-  margin-right: 2%;
+  margin-right: 3%;
   margin-left: 2%;
 }
 
@@ -27,4 +27,21 @@ body {
   border: none;
   cursor: pointer;
   height: 40px;
+}
+
+.no-outline {
+  border: none;
+}
+
+.no-outline:focus {
+  outline: none;
+  border: none;
+}
+
+input[type=text] {
+  outline: none;
+}
+
+.delete {
+  float: right;
 }
