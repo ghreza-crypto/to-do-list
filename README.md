@@ -19,6 +19,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
+- [Key Features](#key-features)
 - [🔭 Future Features](#future-features)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
@@ -120,6 +121,13 @@ npx hint .
 ```bash
 npx eslint .
 ```
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[removing buy one click all your completed tasks]**
+- **[changing completed task to uncompleted]**
+- **[removing and updating easily each task]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
