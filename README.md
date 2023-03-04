@@ -54,16 +54,6 @@
   </ul>
 </details>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Here you can find my project demo
-
-- [Live Demo Link]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -151,7 +141,8 @@ npx eslint .
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+ Contributions, issues, and feature requests are welcome!
+- Feel free to check the [issues page](https://github.com/ghreza-crypto/to-do-list/issues)
 
 ## ⭐️ Show your support <a name="support"></a>
 
