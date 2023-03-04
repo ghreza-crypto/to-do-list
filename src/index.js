@@ -1,31 +1,17 @@
 import './style.css';
+import { savedData, saveTodo, viewData,removeAllCompleted } from './modules/toDoCrud.js';
 
-const toDoList = [
-  {
-    description: 'washing clothes',
-    completed: false,
-    index: 0,
-  },
-  {
-    description: 'driving to university',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'going to gym',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'buying groceries',
-    completed: false,
-    index: 3,
-  },
-];
+const form = document.querySelector('#toDoListForm');
+const inputForm = document.getElementById('addTodo_input');
+const clearAllCompleted=document.getElementById('clearAllCompleted');
 
-const list = document.querySelector('#list');
-toDoList.forEach((todo) => {
-  const html = `<li><span>${todo.description}</span></li>`;
-  list.innerHTML += html;
-  list.innerHTML += '<hr>';
+
+viewData();
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  saveTodo(inputForm.value, false, savedData().length + 1);
+  viewData();
 });
+
+clearAllCompleted.addEventListener('click',removeAllCompleted);
