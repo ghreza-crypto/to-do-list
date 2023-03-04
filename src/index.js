@@ -4,7 +4,7 @@ import {
 } from './modules/toDoCrud.js';
 
 const form = document.querySelector('#toDoListForm');
-const inputForm = document.getElementById('addTodo_input');
+const inputForm = document.getElementById('addTodoInput');
 const clearAllCompleted = document.getElementById('clearAllCompleted');
 
 viewData();
