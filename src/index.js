@@ -1,7 +1,8 @@
 import './style.css';
 import {
-  savedData, saveTodo, viewData, removeAllCompleted,
+  savedData, saveTodo, viewData,
 } from './modules/toDoCrud.js';
+import { removeAllCompleted } from './modules/removeAllCompleted.js';
 
 const form = document.querySelector('#toDoListForm');
 const inputForm = document.getElementById('addTodoInput');
@@ -15,4 +16,6 @@ form.addEventListener('submit', (event) => {
   viewData();
 });
 
-clearAllCompleted.addEventListener('click', removeAllCompleted);
+clearAllCompleted.addEventListener('click', ()=>{
+  removeAllCompleted();
+});

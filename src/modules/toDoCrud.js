@@ -59,18 +59,6 @@ window.deleteTodo = (id) => {
 
   viewData();
 };
-const removeAllCompleted = () => {
-  const filteredArray = savedData().filter((item) => {
-    if (item.completed === false) {
-      return item;
-    }
-    return '';
-  });
-  assignId(filteredArray);
-  localStorage.setItem('todoListStorage', JSON.stringify(filteredArray));
-
-  viewData();
-};
 
 window.updateList = (id) => {
   const updateInput = document.querySelector(`#inputField-${id}`).value;
@@ -85,19 +73,19 @@ window.updateList = (id) => {
 };
 window.completeTask = (id) => {
   const updateArray = savedData().map((item) => {
-    if (item.index - 1 === id) {
-      if (item.completed === true) {
-        item.completed = false;
-      } else {
-        item.completed = true;
+      if (item.index - 1 === id) {
+          if (item.completed === true) {
+              item.completed = false;
+          } else {
+              item.completed = true;
+          }
       }
-    }
-    return item;
+      return item;
   });
 
   localStorage.setItem('todoListStorage', JSON.stringify(updateArray));
 };
 
 export {
-  savedData, saveTodo, viewData, removeAllCompleted,
+  savedData, saveTodo, viewData,assignId,
 };
