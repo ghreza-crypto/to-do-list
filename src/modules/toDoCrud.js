@@ -59,18 +59,6 @@ window.deleteTodo = (id) => {
 
   viewData();
 };
-const removeAllCompleted = () => {
-  const filteredArray = savedData().filter((item) => {
-    if (item.completed === false) {
-      return item;
-    }
-    return '';
-  });
-  assignId(filteredArray);
-  localStorage.setItem('todoListStorage', JSON.stringify(filteredArray));
-
-  viewData();
-};
 
 window.updateList = (id) => {
   const updateInput = document.querySelector(`#inputField-${id}`).value;
@@ -99,5 +87,5 @@ window.completeTask = (id) => {
 };
 
 export {
-  savedData, saveTodo, viewData, removeAllCompleted,
+  savedData, saveTodo, viewData, assignId,
 };
