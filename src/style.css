@@ -28,16 +28,20 @@ body {
   cursor: pointer;
   height: 40px;
 }
-.no-outline:focus{
+
+.no-outline {
+  border: none;
+}
+
+.no-outline:focus {
   outline: none;
   border: none;
 }
-.no-outline{
-  border: none;
-}
-input[type=text]{
+
+input[type=text] {
   outline: none;
 }
-.delete{
+
+.delete {
   float: right;
 }
