@@ -73,19 +73,19 @@ window.updateList = (id) => {
 };
 window.completeTask = (id) => {
   const updateArray = savedData().map((item) => {
-      if (item.index - 1 === id) {
-          if (item.completed === true) {
-              item.completed = false;
-          } else {
-              item.completed = true;
-          }
+    if (item.index - 1 === id) {
+      if (item.completed === true) {
+        item.completed = false;
+      } else {
+        item.completed = true;
       }
-      return item;
+    }
+    return item;
   });
 
   localStorage.setItem('todoListStorage', JSON.stringify(updateArray));
 };
 
 export {
-  savedData, saveTodo, viewData,assignId,
+  savedData, saveTodo, viewData, assignId,
 };
