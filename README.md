@@ -19,6 +19,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
+- [🔭 Future Features](#future-features)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -27,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Global University] <a name="about-project"></a>
+# 📖 [Todo list] <a name="about-project"></a>
 
 > Here you can add and remove you to do list activities.
 
@@ -124,6 +125,12 @@ npx eslint .
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Drag and drop feature which you can drag your tasks upper and lower]**
+- [ ] **[Adding time section for specifying the each task execution time and duration]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
